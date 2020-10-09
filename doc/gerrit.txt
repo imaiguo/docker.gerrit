@@ -27,13 +27,13 @@
 3.修改配置文件 gerrit.config
 
 4.一键创建用户-创建用户test密码abcd1234成功
-    ssh -p 29418 admin@192.168.2.211 gerrit create-account --http-password "abcd"  test  
+    ssh -p 29418 admin@192.168.0.110 gerrit create-account --http-password "abcd1234"  test  
 
 5.配置http代理软件
     a.安装软件[htpasswd 系apache的工具]
         apt install apache2-utils nginx
 
-    b.修改nginx配置,添加代理        
+    b.修改nginx配置,添加代理[默认第一个登录用户就是管理员账户]        
         # htpasswd -c /var/gerrit/gerrit.password admin
     
     c.设置邮箱

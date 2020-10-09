@@ -11,6 +11,6 @@
     或者这里下载:链接: https://pan.baidu.com/s/1dz-Tn4caVOMDYUl2Wb67Ag  密码: k3i3  
     放到install文件夹里即可  
 
-4. 一键创建用户-创建用户test,attach进入docker中后输入如下命令  
-    # htpasswd -c /var/gerrit/gerrit.password test
+4. 一键创建用户-创建用户test密码abcd1234成功  
+    ssh -p 29000 admin@192.168.1.100 gerrit create-account --http-password "abcd1234"  test  
 

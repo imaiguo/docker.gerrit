@@ -5,7 +5,7 @@ Version=3.2.3
 repository=gerrit
 tag=3.2.3
 
-HTTP_PORT=8010
+HTTP_PORT=8090
 SSH_PORT=29000
 
 #关闭镜像
